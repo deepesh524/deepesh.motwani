@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/deepesh.motwani/static/css/main.12213b39.css",
+    "main.css": "/deepesh.motwani/static/css/main.61463863.css",
     "main.js": "/deepesh.motwani/static/js/main.f0890897.js",
     "static/media/Rosseaux.png": "/deepesh.motwani/static/media/Rosseaux.9018cf89eb745063ca73.png",
     "static/media/RewardPro.png": "/deepesh.motwani/static/media/RewardPro.d6b9b669f7bdfb0e354c.png",
@@ -12,11 +12,11 @@
     "static/media/AffiliatePanel.png": "/deepesh.motwani/static/media/AffiliatePanel.e9d75c70d29429fa04c4.png",
     "static/media/DeepeshMotwani1.png": "/deepesh.motwani/static/media/DeepeshMotwani1.5b6e8397fe1fe3d89676.png",
     "index.html": "/deepesh.motwani/index.html",
-    "main.12213b39.css.map": "/deepesh.motwani/static/css/main.12213b39.css.map",
+    "main.61463863.css.map": "/deepesh.motwani/static/css/main.61463863.css.map",
     "main.f0890897.js.map": "/deepesh.motwani/static/js/main.f0890897.js.map"
   },
   "entrypoints": [
-    "static/css/main.12213b39.css",
+    "static/css/main.61463863.css",
     "static/js/main.f0890897.js"
   ]
 }
