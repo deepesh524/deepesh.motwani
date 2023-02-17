@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.d6a24b30.css",
+    "main.js": "/react-gh-pages/static/js/main.c964c918.js",
+    "static/media/Rosseaux.png": "/react-gh-pages/static/media/Rosseaux.9018cf89eb745063ca73.png",
+    "static/media/RewardPro.png": "/react-gh-pages/static/media/RewardPro.d6b9b669f7bdfb0e354c.png",
+    "static/media/AdminPanel.png": "/react-gh-pages/static/media/AdminPanel.0be4fd08830af6d59d44.png",
+    "static/media/Mobiaviator.png": "/react-gh-pages/static/media/Mobiaviator.e0bc58964faaf14a6234.png",
+    "static/media/Apssuccessor.png": "/react-gh-pages/static/media/Apssuccessor.8f62e9fb10ad428e7877.png",
+    "static/media/Appsatitate.png": "/react-gh-pages/static/media/Appsatitate.182e2fb2e8ca818b6b6c.png",
+    "static/media/Appanalytics.png": "/react-gh-pages/static/media/Appanalytics.53b90c82aed68a6ec05d.png",
+    "static/media/AffiliatePanel.png": "/react-gh-pages/static/media/AffiliatePanel.e9d75c70d29429fa04c4.png",
+    "static/media/DeepeshMotwani1.png": "/react-gh-pages/static/media/DeepeshMotwani1.5b6e8397fe1fe3d89676.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.d6a24b30.css.map": "/react-gh-pages/static/css/main.d6a24b30.css.map",
+    "main.c964c918.js.map": "/react-gh-pages/static/js/main.c964c918.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6a24b30.css",
+    "static/js/main.c964c918.js"
+  ]
+}
