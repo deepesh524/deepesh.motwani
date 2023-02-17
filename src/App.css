@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+.main-app{
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.aboutContainer{
+  margin-left: 100px;
+  font-family: cursive;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-left: 50px;
+  padding-right: 50px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.foregroundImage{
+  position: absolute;
+  width: calc(100vw - 100px - 50px);
 }
+.htmlTags{
+  color: rgb(123, 123, 123);
+  font-family: 'Dancing Script';
+  font-size: 20px;
+}
+.introText{
+  font-family: 'Acme', sans-serif;
+  font-size: 7vw;
+  display: flex;
+  align-items: center;
+}
+.introText:nth-child(2){
+  margin-top: -20px;
+}
+.introText:nth-child(3){
+  margin-top: -20px;
+}
+.tagLine{
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-weight: 100  ;
+  color: rgb(150,150,150);
+  letter-spacing: 5px;
+}
+.dancingCharacter:hover{
+  /* animation: dancingAnimation 0.8s forwards; */
+  color: rgb(0,225,255);
+  cursor: default;
+}
+.contactButton-unhovered {
+  text-decoration: none;
+  padding: 15px 75px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.contactButton {
+  border: 2px solid rgb(0,225,255);
+  z-index: 1;
+  color: rgb(0,225,255);
+}
+.contactButton:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: rgb(0,225,255);
+  transition: all 0.5s ease;
+}
+.contactButton:hover {
+  color: rgb(0, 0, 0);
+}
+.contactButton:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.contactButton:active {
+  top: 2px;
+}
+.scrollDownText{
+  font-family: Arial, Helvetica, sans-serif;
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  display: flex;
+  height: 150px;
+  position: absolute;
+  z-index: 1;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+}
+.scrollDownTextAnimation{
+  animation: upAndDownAnimation 0.8s infinite;
+}
+@keyframes upAndDownAnimation {
+  0%{
+    transform: translateY(-25px);
   }
-  to {
-    transform: rotate(360deg);
+  50%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-25px);
+  }
+}
+@keyframes dancingAnimation {
+  12.5%{
+    transform: scaleY(0.75) scaleX(1.25);
+  }
+  25%{
+    transform: scaleY(0.5) scaleX(1.5);
+  }
+  37.5%{
+    transform: scale(0.75) scaleX(1.25);
+  }
+  50%{
+    transform: scale(1) scaleX(1);
+  }
+  62.5%{
+    transform: scale(1.25) scaleX(0.75);
+  }
+  75%{
+    transform: scale(1.5) scaleX(0.5);
+  }
+  87.5%{
+    transform: scale(1.25) scaleX(0.75);
+  }
+  100%{
+    transform: scale(1) scaleX(1);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .aboutContainer {
+      padding-top: 100px;
+      margin-left: 0px;
+      padding-left: 10px;
+  }
+  .foregroundImage{
+    position: absolute;
+    width: calc(100vw - 10px);
+  }
+  .introText{
+    font-size: 9vw;
+  }
+  .introText:nth-child(2){
+    margin-top: 0px;
+  }
+  .introText:nth-child(3){
+    margin-top: 0px;
+  }
+  .tagLine{
+    font-size: 3.5vw;
   }
 }

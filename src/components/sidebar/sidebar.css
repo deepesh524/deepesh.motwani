@@ -1,0 +1,158 @@
+.sidebar{
+    position: fixed;
+    width: 130px;
+    background-color: rgb(18, 18, 18);
+    height: 100vh;
+    color:white;
+    top:0
+}
+.sidebarLogo{
+    min-height: 150px;
+    height: 25vh;
+    background-color: black;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 12px;
+    color: rgb(219, 219, 219);
+}
+.sidebarPages{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 70px;
+}
+.sidebarPageWrapper{
+    font-size: 16px;
+    color: rgb(200,200,200);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-top: 1px solid rgb(50,50,50);
+    cursor: pointer;
+}
+.sidebarPageWrapper:last-child{
+    border-bottom: 1px solid rgb(50,50,50);
+
+}
+.sidebarPageWrapper:hover{
+    color:rgb(0, 224, 255);
+}
+.logo{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* animation: droptop 2s infinite; */
+}
+.sidebarIcon{
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+.sidebarMenu{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .sidebar {
+        height: 100px;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+    }
+    .sidebarLogo{
+        flex-direction: row;
+        height: 100px;
+        min-height: 100px;
+        width: 30%;
+        justify-content: flex-start;
+
+    }
+    .logo{
+        height: 70px;
+        width: 100px;
+    }
+    .logoDesc{
+        display: none;
+    }
+    .sidebarPages{
+        padding-top: 0px;
+        flex-direction: row;
+        width: 70%;
+        height: 100px;
+    }
+    .sidebarPageWrapper{
+        border-top: none;
+    }
+    .sidebarPageWrapper:last-child{
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .sidebar {
+        justify-content: space-between;
+        display: flex;
+        z-index: 1;
+        position: absolute;
+    }
+    .sidebarPages{
+        display: none;
+    }
+    .sidebarPageWrapper{
+        border-top: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sidebarPageWrapper:last-child{
+        border-bottom: none;
+    }
+    .sidebarIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-align: center;
+        width: 100px;
+    }
+    .sidebarMenu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        margin-top: 100px;
+        transform: translateY(-200%);
+        z-index: 0;
+    }
+}
+
+@keyframes droptop {
+    0%{
+        transform: translateY(-200%);
+    }    
+    100%{
+        transform: translateY(0px);
+    } 
+}
+
+@keyframes moveup {
+    0%{
+        transform: translateY(0px);
+    }    
+    100%{
+        transform: translateY(-200%);
+    } 
+}
