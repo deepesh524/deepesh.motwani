@@ -57,6 +57,7 @@
 }
 .sidebarMenu{
     display: none;
+    background-color: black;
 }
 
 
@@ -100,8 +101,9 @@
     .sidebar {
         justify-content: space-between;
         display: flex;
-        z-index: 1;
+        z-index: 2;
         position: absolute;
+        background-color: black;
     }
     .sidebarPages{
         display: none;
@@ -135,7 +137,8 @@
         left: 0;
         margin-top: 100px;
         transform: translateY(-200%);
-        z-index: 0;
+        z-index: 1;
+        background-color: black;
     }
 }
 

@@ -10,14 +10,17 @@ const Sidebar = () => {
         {label:'Contact'},
         {label:'Blog'},
     ]
+    const [topbarOpened, setTopbarOpened] = useState(false)
     useEffect(() => {
         document.addEventListener('click',e=>{
             document.getElementById('sidebarMenu').style.animation = 'moveup 0.5s forwards'
+            setTopbarOpened(false);
         })
         
         return () => {
             document.removeEventListener('click',e=>{
-                document.getElementById('sidebarMenu').style.animation = 'moveup 0.5s forwards'
+                document.getElementById('sidebarMenu').style.animation = 'moveup 0.5s forwards';
+                setTopbarOpened(false);
             })
         }
     }, [])
@@ -30,7 +33,7 @@ const Sidebar = () => {
                     <div style={{fontSize:'25px',fontFamily:"'Acme', sans-serif"}}>Deepesh</div>
                     <div className='logoDesc' style={{fontSize:'12px',paddingTop:'5px',paddingBottom:'5px'}}>Frontend Developer</div>
                 </div>
-                <div className='sidebarIcon' onClick={(e)=>{e.stopPropagation();document.getElementById('sidebarMenu').style.animation = 'droptop 0.5s forwards'}}>
+                <div className='sidebarIcon' onClick={(e)=>{e.stopPropagation();if(topbarOpened){setTopbarOpened(false);document.getElementById('sidebarMenu').style.animation = 'moveup 0.5s forwards';}else{setTopbarOpened(true);document.getElementById('sidebarMenu').style.animation = 'droptop 0.5s forwards'}}}>
                     ...
                 </div>
                 <div className='sidebarPages'>
