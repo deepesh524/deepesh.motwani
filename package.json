@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://deepesh524.github.io/deepesh.motwani",
+  "homepage": "https://deepesh524.github.io/deepesh.motwani/",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.56.25",
