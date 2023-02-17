@@ -142,7 +142,7 @@
   .foregroundImage{
     position: absolute;
     width: calc(100vw - 10px);
-    color: rgb(107, 0, 93);
+    color: rgb(255, 255, 255);
   }
   .introText{
     font-size: 9vw;
