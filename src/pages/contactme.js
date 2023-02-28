@@ -5,7 +5,7 @@ import '../css/meMyselfAndI.css';
 import '../App.css';
 import SphereOfWords from '../components/sphereOfWords/sphereOfWords';
 
-const MeMyselfAndI = () => {
+const ContactMe = () => {
     const data = [
         { value: 'JavaScript', count: 38 },
         { value: 'React', count: 30 },
@@ -31,24 +31,24 @@ const MeMyselfAndI = () => {
             </div>
             <div className='introText' style={{color:'rgb(0,226,255)',fontSize:'5vw',marginLeft:getMarginLeft(9),marginTop:'0px'}} >
                 <div style={{display:'flex',alignItems:'flex-end'}}>
-                    {Array.from('Me,Myself').map((item,index)=>{
-                        return <div id={'meFirstLineIndex'+index} onMouseOver={()=>{document.getElementById('meFirstLineIndex'+index).style.animation = 'dancingAnimation 0.5s forwards'}}  onMouseLeave={()=>{setTimeout(()=>{document.getElementById('meFirstLineIndex'+index).style.animation = ''}, 400);}} key={index} className='dancingCharacterBase'>
+                    {Array.from('Get').map((item,index)=>{
+                        return <div id={'contactFirstLineIndex'+index} onMouseOver={()=>{document.getElementById('contactFirstLineIndex'+index).style.animation = 'dancingAnimation 0.5s forwards'}}  onMouseLeave={()=>{setTimeout(()=>{document.getElementById('contactFirstLineIndex'+index).style.animation = ''}, 400);}} key={index} className='dancingCharacterBase'>
                                     {item}
                                 </div>
                     })}
                 </div>
 
                 <div style={{display:'flex',alignItems:'flex-end',paddingLeft:'10px'}}>
-                    {Array.from('And').map((item,index)=>{
-                        return <div id={'andSecondLineIndex'+index} onMouseOver={()=>{document.getElementById('andSecondLineIndex'+index).style.animation = 'dancingAnimation 0.5s forwards'}}  onMouseLeave={()=>{setTimeout(()=>{document.getElementById('andSecondLineIndex'+index).style.animation = ''}, 400);}} key={index} className='dancingCharacterBase'>
+                    {Array.from('In').map((item,index)=>{
+                        return <div id={'contactMiddleLineIndex'+index} onMouseOver={()=>{document.getElementById('contactMiddleLineIndex'+index).style.animation = 'dancingAnimation 0.5s forwards'}}  onMouseLeave={()=>{setTimeout(()=>{document.getElementById('contactMiddleLineIndex'+index).style.animation = ''}, 400);}} key={index} className='dancingCharacterBase'>
                                     {item}
                                 </div>
                     })}
                 </div>
 
                 <div style={{display:'flex',alignItems:'flex-end',paddingLeft:'10px'}}>
-                    {Array.from('I').map((item,index)=>{
-                        return <div id={'iSecondLineIndex'+index} onMouseOver={()=>{document.getElementById('iSecondLineIndex'+index).style.animation = 'dancingAnimation 0.5s forwards'}}  onMouseLeave={()=>{setTimeout(()=>{document.getElementById('iSecondLineIndex'+index).style.animation = ''}, 400);}} key={index} className='dancingCharacterBase'>
+                    {Array.from('Touch').map((item,index)=>{
+                        return <div id={'contactSecondLineIndex'+index} onMouseOver={()=>{document.getElementById('contactSecondLineIndex'+index).style.animation = 'dancingAnimation 0.5s forwards'}}  onMouseLeave={()=>{setTimeout(()=>{document.getElementById('contactSecondLineIndex'+index).style.animation = ''}, 400);}} key={index} className='dancingCharacterBase'>
                                     {item}
                                 </div>
                     })}
@@ -59,38 +59,31 @@ const MeMyselfAndI = () => {
             </div>
             <div className='meMyselfDesc' style={{marginLeft:getMarginLeft(7)}}>
                 <div style={{width:'50%'}}>
-                    <div className='htmlTags'>
+                    <div className='htmlTags' >
                         {'<p>'}
                     </div>
                     <div className='para'  style={{marginLeft:getMarginLeft(2)}}>
-                        Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards of the current web I've been passionate about web.
-                        <br/>
-                        <br/>
-                        For over a decade I had many opportunities to work in a vast spectrum of web technologies what let me gather a significant amount of various experience. Working for companies and individuals around the globe I met and learnt from amazing and ambitious people.
+                        I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.
+
                     </div>
                     <div className='htmlTags'>
                         {'</p>'}
                     </div>
-                    <div className='htmlTags' style={{marginLeft:getMarginLeft(2),marginTop:'20px'}}>
-                        {'<section>'}
+                    <div className='htmlTags' style={{marginTop:'20px'}}>
+                        {'<form>'}
                     </div>
 
-                    <div className='htmlTags' style={{marginLeft:getMarginLeft(2),marginTop:'10px'}}>
-                        {'</section>'}
+                    <div className='htmlTags' style={{marginTop:'10px'}}>
+                        {'</form>'}
                     </div>
-                </div>
-                <div style={{minHeight:'500px',marginTop:'-75px'}}>
-                    <SphereOfWords
-                    data = {data}
-                    />
                 </div>
 
             </div>
 
-            <div className='portfolioBgMask'>ABOUT<br/> ME</div>
+            <div className='portfolioBgMask'>@</div>
 
         </div>
     )
 }
 
-export default MeMyselfAndI
+export default ContactMe

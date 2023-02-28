@@ -4,11 +4,11 @@ import Logo from '../../img/DeepeshMotwani1.png';
 
 const Sidebar = () => {
     const pages = [
-        {label:'About'},
-        {label:'My Skills'},
-        {label:'Work'},
-        {label:'Contact'},
-        {label:'Blog'},
+        {label:'About',value:'#about'},
+        {label:'My Skills',value:'#mySkills'},
+        {label:'Work',value:'#work'},
+        {label:'Contact',value:'#contact'},
+        {label:'Blog',value:'#blog'},
     ]
     const [topbarOpened, setTopbarOpened] = useState(false)
     useEffect(() => {
@@ -29,7 +29,9 @@ const Sidebar = () => {
         <div>
             <div className='sidebar'>
                 <div className='sidebarLogo'>
-                    <img src={Logo} alt='' className='logo'></img>
+                    <a href='#home'>
+                        <img src={Logo} alt='' className='logo'></img>
+                    </a>
                     <div style={{fontSize:'25px',fontFamily:"'Acme', sans-serif"}}>Deepesh</div>
                     <div className='logoDesc' style={{fontSize:'12px',paddingTop:'5px',paddingBottom:'5px'}}>Frontend Developer</div>
                 </div>
@@ -38,17 +40,22 @@ const Sidebar = () => {
                 </div>
                 <div className='sidebarPages'>
                     {pages.map((item,index)=>{
-                        return <div className='sidebarPageWrapper' key={index}>
-                            {item.label}
-                        </div>
+                        return <a style={{textDecoration:'none',width:'50%'}} key={index} href={item.value}>
+                            <div className='sidebarPageWrapper'>
+                                {item.label}
+                            </div>
+                        </a>
+
                     })}
                 </div>
             </div>
             <div id='sidebarMenu' className='sidebarMenu'>
                 {pages.map((item,index)=>{
-                    return <div className='sidebarPageWrapper' key={index}>
-                        {item.label}
-                    </div>
+                    return <a style={{textDecoration:'none',width:'50%'}} key={index} href={item.value}>
+                        <div className='sidebarPageWrapper' key={index}>
+                            {item.label}
+                        </div>
+                    </a>
                 })}
             </div>
         </div>

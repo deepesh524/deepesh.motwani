@@ -3,16 +3,26 @@ import ParticleComponent from './components/particles/particles';
 import Sidebar from './components/sidebar/sidebar';
 import MeMyselfAndI from './pages/meMyselfAndI';
 import PortfolioPage from './pages/portfolio';
+import $ from 'jquery';
+import ContactMe from './pages/contactme';
+
 export const getMarginLeft = (int) => {
     return String(int)+'%'
 }
 
 function App() {
-    
+    $(document).ready(function() {
+        $('a[href*=\\#]').on('click', function(e){
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop : $(this.hash).offset().top
+            }, 800);
+        });
+    });
     return (
         <div>
             <Sidebar/>
-            <div className='aboutContainer'>
+            <div id='home' className='aboutContainer'>
                 <ParticleComponent/>
                 <div className='foregroundImage'>
                     <br/>
@@ -109,6 +119,9 @@ function App() {
             </div>
             <div>
                 <MeMyselfAndI/>
+            </div>
+            <div>
+                <ContactMe/>
             </div>
         </div>
     );
