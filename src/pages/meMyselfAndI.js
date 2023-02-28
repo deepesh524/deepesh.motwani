@@ -38,6 +38,7 @@ const MeMyselfAndI = () => {
                     })}
                 </div>
 
+
                 <div style={{display:'flex',alignItems:'flex-end',paddingLeft:'10px'}}>
                     {Array.from('And').map((item,index)=>{
                         return <div id={'andSecondLineIndex'+index} onMouseOver={()=>{document.getElementById('andSecondLineIndex'+index).style.animation = 'dancingAnimation 0.5s forwards'}}  onMouseLeave={()=>{setTimeout(()=>{document.getElementById('andSecondLineIndex'+index).style.animation = ''}, 400);}} key={index} className='dancingCharacterBase'>
