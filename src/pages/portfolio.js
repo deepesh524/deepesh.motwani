@@ -2,25 +2,24 @@ import React from 'react'
 import { getMarginLeft } from '../App';
 import '../css/portfolio.css';
 import '../App.css';
-import Rosseaux from '../img/portfolio_projects/Rosseaux.png';
 import RewardPro from '../img/portfolio_projects/RewardPro.png';
 import Appsatitate from '../img/portfolio_projects/Appsatitate.png';
 import Apssuccessor from '../img/portfolio_projects/Apssuccessor.png';
-import Mobiaviator from '../img/portfolio_projects/Mobiaviator.png';
+import Mobiaviator from '../img/portfolio_projects/mobiaviator.png';
 import Appanalytics from '../img/portfolio_projects/Appanalytics.png';
-import AdminPanel from '../img/portfolio_projects/AdminPanel.png';
-import AffiliatePanel from '../img/portfolio_projects/AffiliatePanel.png';
+import FAA from '../img/portfolio_projects/FAA.png';
 
 const PortfolioPage = () => {
     var projectList = [
-        {label:'Rosseaux',img_src:Rosseaux},
-        {label:'RewardPro',img_src:RewardPro,offset:"10% 0%"},
-        {label:'Appsatiate',img_src:Appsatitate,offset:"15% 0%"},
-        {label:'Appsuccessor',img_src:Apssuccessor,offset:"20% 0%"},
-        {label:'Mobiaviator',img_src:Mobiaviator,offset:"20% 0%"},
-        {label:'Appanalytics',img_src:Appanalytics,offset:"10% 0%"},
-        {label:'Affiliate Marketing - Affiliate Panel',img_src:AffiliatePanel},
-        {label:'Affiliate Marketing - Admin Panel',img_src:AdminPanel,offset:"37% 0%"},
+        {label:'FAA',logo_src:<img alt='' src={FAA} width='70%'/>,link:'https://velvety-pasca-0c9ba7.netlify.app/'},
+        {label:'Rosseaux',logo_src:<div style={{fontFamily:'Cinzel',fontSize:'30px',textTransform:'uppercase'}}>Rosseaux</div>,link:'http://trial-website.appsuccessor.com/home'},
+        {label:'RewardPro',logo_src:<img alt='' src={RewardPro} width='70%'/>,link:'https://rewardpro.in/'},
+        {label:'Appsatiate',logo_src:<img alt='' src={Appsatitate} width='80%'/>,link:'http://appsatiate.com/'},
+        {label:'Appsuccessor',logo_src:<img alt='' src={Apssuccessor} width='50%'/>,link:'https://appsuccessor.com/'},
+        {label:'Mobiaviator',logo_src:<img alt='' src={Mobiaviator} width='50%'/>,link:'http://mobiaviator.com/'},
+        {label:'Appanalytics',logo_src:<img alt='' src={Appanalytics} width='90%'/>,link:'https://appanalytics.in/'},
+        // {label:'Affiliate Marketing - Affiliate Panel',img_src:AffiliatePanel},
+        // {label:'Affiliate Marketing - Admin Panel',img_src:AdminPanel,offset:"37% 0%"},
     ]
     return (
         <div className='portfolioContainer'>
@@ -66,11 +65,18 @@ const PortfolioPage = () => {
                 {projectList.map((item,index)=>{
                     return <div key={index} className='portfolioProjectItem'>
                         {/* {item.label} */}
+                        {item.img_src &&
                         <img src={item.img_src} className='portfolioProjectCover' style={{objectPosition:(item.offset ? item.offset : '0% 0%')}} alt={item.label} height='100%' width='100%'>
                         </img>
+                        }
+                        {item.logo_src &&
+                         item.logo_src
+                        }
                         <div className='portfolioProjectItemHover'>
                             <div className='portfolioBlueButton'>
+                                <a href={item.link} style={{textDecoration:'none',color:'black'}} target='_blank' rel="noreferrer">
                                 View <br/>Project
+                                </a>
                             </div>
                         </div>
                     </div>
