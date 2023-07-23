@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/deepesh.motwani/static/css/main.61463863.css",
-    "main.js": "/deepesh.motwani/static/js/main.6c6d87ab.js",
-    "static/media/Rosseaux.png": "/deepesh.motwani/static/media/Rosseaux.9018cf89eb745063ca73.png",
-    "static/media/RewardPro.png": "/deepesh.motwani/static/media/RewardPro.d6b9b669f7bdfb0e354c.png",
-    "static/media/AdminPanel.png": "/deepesh.motwani/static/media/AdminPanel.0be4fd08830af6d59d44.png",
-    "static/media/Mobiaviator.png": "/deepesh.motwani/static/media/Mobiaviator.e0bc58964faaf14a6234.png",
-    "static/media/Apssuccessor.png": "/deepesh.motwani/static/media/Apssuccessor.8f62e9fb10ad428e7877.png",
-    "static/media/Appsatitate.png": "/deepesh.motwani/static/media/Appsatitate.182e2fb2e8ca818b6b6c.png",
-    "static/media/Appanalytics.png": "/deepesh.motwani/static/media/Appanalytics.53b90c82aed68a6ec05d.png",
-    "static/media/AffiliatePanel.png": "/deepesh.motwani/static/media/AffiliatePanel.e9d75c70d29429fa04c4.png",
+    "main.css": "/deepesh.motwani/static/css/main.c8df355f.css",
+    "main.js": "/deepesh.motwani/static/js/main.5022c753.js",
+    "static/media/RewardPro.png": "/deepesh.motwani/static/media/RewardPro.2e05d21dcb7070686489.png",
+    "static/media/Appanalytics.png": "/deepesh.motwani/static/media/Appanalytics.d51b9292e7b52f18c8f4.png",
+    "static/media/Apssuccessor.png": "/deepesh.motwani/static/media/Apssuccessor.778da4c442afbd6c3c42.png",
     "static/media/DeepeshMotwani1.png": "/deepesh.motwani/static/media/DeepeshMotwani1.5b6e8397fe1fe3d89676.png",
+    "static/media/Appsatitate.png": "/deepesh.motwani/static/media/Appsatitate.8c8cb4d90f06d774f4db.png",
+    "static/media/FAA.png": "/deepesh.motwani/static/media/FAA.17d584f22483ae54fb00.png",
+    "static/media/mobiaviator.png": "/deepesh.motwani/static/media/mobiaviator.4d214d6ba65da8402507.png",
     "index.html": "/deepesh.motwani/index.html",
-    "main.61463863.css.map": "/deepesh.motwani/static/css/main.61463863.css.map",
-    "main.6c6d87ab.js.map": "/deepesh.motwani/static/js/main.6c6d87ab.js.map"
+    "main.c8df355f.css.map": "/deepesh.motwani/static/css/main.c8df355f.css.map",
+    "main.5022c753.js.map": "/deepesh.motwani/static/js/main.5022c753.js.map"
   },
   "entrypoints": [
-    "static/css/main.61463863.css",
-    "static/js/main.6c6d87ab.js"
+    "static/css/main.c8df355f.css",
+    "static/js/main.5022c753.js"
   ]
 }
